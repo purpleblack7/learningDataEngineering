@@ -1,0 +1,2 @@
+USE Reviews;
+SELECT * FROM Businesses where City='Cleveland';

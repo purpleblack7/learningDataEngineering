@@ -1,0 +1,69 @@
+SNOWSQL
+
+Step 1: Update the config file
+    This is located in the Users folder ( just type cd and hit enter to get to the user directory ). 
+    Use 'ls-a ' to see the hidden files. Cd to .snowsql
+    Use 'nano config' to edit the configuration file for easy access to snowsql
+    Fill in the values of account name (the first part of the url for SnowFlake Desktop before.snowflake....), username and password. Make sure to uncomment these lines and save the file
+
+
+Step 2: Creating Tables 
+
+type snowsql in the terminal
+
+'!source /Users/purpleblack/Downloads/snowflake-cloud-data-platform-getting-started/03/demos/m3/CREATE TABLE SNOWSQL.txt'       # My location of the "CREATE TABLE SNOWSQL.txt" file.
+
+
+USE Reviews; #Using the Reviews DB
+SELECT * from BUSINESSES LIMIT 5; #Sample Query
+
+'!source /Users/purpleblack/Downloads/snowflake-cloud-data-platform-getting-started/03/demos/m3/CREATE TABLE SNOWSQL.txt'
+
+!define cityName='Las Vegas' # Creating a variable cityName with value 'Las Vegas'
+
+!set variable_substitution=true #Variable subsitution allows you to query on a variable using th '&' prefix. Note that there is no space after the '=' sign
+
+SELECT * FROM top_businesses WHERE city='&cityName'; #Example of Variable Substituiton. Searching for a city name of 'Las Vegas'
+
+!set variable_substitution=false #If you set Variable Substitution to false, the query will look for the variable name literally.
+
+SELECT * FROM top_businesses WHERE city='&cityName'; #Searching for a city name that is '&cityName'
+
+!define partialName='Las ' #Creating a variable that has a partial form of 'Las Vegas' -> 'Las '
+
+!set variable_substitution=true #Setting variable substituition to true
+
+SELECT * FROM top_businesses WHERE city='&{partialName}Vegas'; #Query
+
+!variables #To view a list of variables created 
+
+!spool .\.snowsql\results.txt #Spooling saves the results of the query to a file which can be accessed locally. !spool tells when to start spooling. You need to provide the destination path
+
+SELECT * FROM businesses limit 5; #Query to be spooled
+
+!spool off #Spool off tells SnowSQL to stop spooling here.
+
+!set output_format=csv #To change the output format from .txt to .csv
+
+!set header=false #Removing headers
+
+!set timing=false # timing specifies whether to display the number of rows produced and elapsed time for SQL statements that have executed. Removing that because it is unnecessary
+
+!spool .\.snowsql\results.csv #spooling 
+
+SELECT * from businesses limit 5; #query
+
+!spool off #turning off spool
+
+!queries session #Provides a list of queries made during this session along with a unique identifier for each query.
+
+!result *************** #Get the result of a query executed. Replace ****** with the query ID
+
+!quit #Quits the session
+
+
+Step 3:
+Using the Terminal to automatically run queries 
+
+ snowsql -f /Users/purpleblack/Downloads/snowflake-cloud-data-platform-getting-started/03/demos/m3/SimpleQuery.txt -o output_file=./.snowsql/output.csv -o quiet=true -o friendly=false -o header=false -o output_format=csv 
+

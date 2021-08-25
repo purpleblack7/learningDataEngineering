@@ -1,0 +1,1 @@
+snowsql.exe -f .\Documents\Snowflake\m3\SimpleQuery.txt -o output_file=.\.snowsql\output.csv -o quiet=true -o friendly=false -o header=false -o output_format=csv
