@@ -1,0 +1,49 @@
+USE REVIEWS;
+PUT file:///Users/purpleblack/Downloads/snowflake-cloud-data-platform-getting-started/04/demos/demos/csvfiles/users.csv @~/staged; #Snowflake applies the GZIP compression to compress the file
+
+LIST @~; #List the contents for your personal stage. Snowflake web portal uses the user stage to keep track of the different worksheets that you work on and save their status.
+
+LIST @~/staged; #List the contents of the staged folder
+
+PUT file:///Users/purpleblack/Downloads/snowflake-cloud-data-platform-getting-started/04/demos/demos/csvfiles/users.csv @%users/staged; # Specifying the table stage
+
+LIST @%users; #Listing the users table staging area
+
+show stages;
+
+PUT file:///Users/purpleblack/Downloads/snowflake-cloud-data-platform-getting-started/04/demos/demos/csvfiles/users.csv @shared_stage/staged;
+
+list @shared_stage;
+
+COPY INTO USERS FROM @~/staged file_format = (TYPE = 'CSV' FIELD_DELIMITER =',' SKIP_HEADER = 1); # The problem with this query is that it stops on an error
+
+COPY INTO USERS FROM @~/staged file_format = (TYPE = 'CSV' FIELD_DELIMITER =',' SKIP_HEADER = 1) ON_ERROR=CONTINUE; #Continues when an error is encountered. The table has been loaded partially
+
+SELECT * FROM TABLE(VALIDATE(users,job_id => '_last')); #Snowflake keeps a history of the errors. _last retrieves the latest copy that happened. This converts the error into a table and shows all
+
+TRUNCATE TABLE USERS #Truncates the table users
+
+COPY INTO USERS FROM  @~/staged file_format = (TYPE = 'CSV' FIELD_DELIMITER = ',' SKIP_HEADER = 1) VALIDATION_MODE = 'RETURN_ERRORS'; #Does not load the actual content, but returns the errors that will occur when you try to load the data.
+
+COPY INTO USERS FROM @~/staged file_format = (TYPE = 'CSV' FIELD_DELIMITER = ',' SKIP_HEADER = 1 FIELD_OPTIONALLY_ENCLOSED_BY='"') purge=true; # Correct way of importing files. Purge means that the file is removed from staging after completion.
+
+SELECT * FROM USERS LIMIT 10; #Sample query
+
+TRUNCATE TABLE USERS; #Truncating the table
+
+COPY INTO USERS FROM @shared_stage/staged purge=TRUE; #purging from shared_stage
+
+TRUNCATE TABLE USERS; #Deleting the table 
+
+COPY INTO REVIEWS FROM @%users/staged file_format = (TYPE = 'CSV' FIELD_DELIMITER = ',' SKIP_HEADER = 1 FIELD_OPTIONALLY_ENCLOSED_BY='"'); #This will give an error as we are trying to access the stage area of one table (users) with the schema of another table (reviews)
+
+COPY INTO USERS FROM @%users/staged file_format = (TYPE = 'CSV' FIELD_DELIMITER = ',' SKIP_HEADER = 1 FIELD_OPTIONALLY_ENCLOSED_BY='"'); #Fixing it
+
+LIST @%USERS;
+
+REMOVE @%users/staged/; #Manually removing file from stage
+
+SELECT *
+FROM table(information_schema.copy_history(table_name=>'users', start_time=> dateadd(hours, -1, current_timestamp()))); #History of operations done
+
+
