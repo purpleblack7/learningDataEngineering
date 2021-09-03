@@ -1,0 +1,8 @@
+This code focuses on three tasks that run in parallel. The output file is in an S3 bucket. The AWS_ACCESS_KEY and AWS_SECRET_ACCESS_KEY should be entered in the environment variables. 
+
+
+The three functions are:
+
+  1) Download Orders - Creates a file 'orders.csv' with the text 'to do...' 
+  2) Download Sales - Creates a file 'sales.csv' with the text 'to do...'  
+  3) Download Inventory - Creates a file 'inventory.csv' with the text 'to do...'  
