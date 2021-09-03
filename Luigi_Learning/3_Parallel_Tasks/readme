@@ -1,1 +1,0 @@
-This code focuses on three tasks that run in parallel. The output file is in an S3 bucket. The AWS_ACCESS_KEY and AWS_SECRET_ACCESS_KEY should be entered in the environment variables. 
