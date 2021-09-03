@@ -1,0 +1,11 @@
+This code creates a pipeline with three successive tasks
+There are three tasks:
+
+      1)Process Orders: Writes orders to a target file 'orders.csv'
+      
+      2)Generate Report: Aggregates the sum of the orders for each month to a target file 'report.csv'.
+                         This task waits for Process Orders to complete to start. Hence ProcessOrders is a dependency in the 'requires' stage.
+       
+      3)Summarize Report: Sums the rows of the Amount column
+      
+      Note that I haven't used the '--local-scheduler'. This is because I learnt about the LuigiUI feature at http://localhost:8082
