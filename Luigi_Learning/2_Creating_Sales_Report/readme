@@ -1,0 +1,8 @@
+This code was to learn how one task can be dependent on another task in Luigi
+
+There are two tasks:
+
+      1)Process Orders: Writes orders to a target file 'orders.csv'
+      
+      2)Generate Report: Aggregates the sum of the orders for each month to a target file 'report.csv'.
+                         This task waits for Process Orders to complete to start. Hence ProcessOrders is a dependency in the 'requires' stage.
