@@ -1,0 +1,7 @@
+This is my first Luigi workflow to print "Hello World" and create a target file 'result.csv' which contains the text "Ok"
+
+Note: Creating a separate virtual environment (venv) for the installation and running of Luigi is highly recommended
+
+Google 'How to create a venv' to see how to create a venv.
+
+In Pycharm, when creating a new project, under "Project Interpreter", select "Existing Interpreter" and select your venv from the list.
