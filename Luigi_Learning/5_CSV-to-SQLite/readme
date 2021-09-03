@@ -1,0 +1,10 @@
+This code creates has two functions to create two reports and then a third function to upload it to an SQLite Database. 
+
+
+The luigi.contrib has a module for sqlalchemy which works on SQLite called sqla
+
+The three functions are:
+  1)DownloadFranceSales - Creates a file 'france.csv' which contains the sales data for France
+  2)DownloadGermanySales - Creates a file 'germany.csv' which contains the sales data for Germany
+  3)CreateDatabase - Creates an SQLite database
+  
