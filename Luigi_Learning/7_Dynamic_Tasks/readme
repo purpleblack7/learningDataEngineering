@@ -1,0 +1,7 @@
+This code is to create a pipeline for tasks that are allocated dynamically
+
+Sales reports in csv format are loaded to the input folder
+
+All the csv files are checked and all lines with a ',' are taken and written to a file having the same name as the input file. These files are stored in the output folder.
+
+A total sum report is created as 'all_sales.csv' 
