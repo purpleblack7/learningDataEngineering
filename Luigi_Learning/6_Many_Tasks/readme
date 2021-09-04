@@ -1,0 +1,4 @@
+This code is to execute a pipeline that has many endpoints from one start point. Refer to the figure attached (ignore Final)
+
+
+Final is a Wrapper Class so that all processes can be executed (Luigi can only take one end point in the 'run' statement. This is to tie them up so all tasks will be executed
