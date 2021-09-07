@@ -1,0 +1,11 @@
+This code takes in the input folder as a parameter, compared to what was done in the last unit. 
+This makes the code more versatile as it is more convenient to specify the input folder rather than putting the input files in an 'input' folder
+
+
+The code to enter in the terminal to run the program:
+
+python -m luigi --module start-pipeline-parameters DownloadSalesData --input-folder kyu-kyu-input --local-scheduler
+
+  * kyu-kyu-input is the name of the input folder
+  * DownloadSalesDate is the end task
+  * The variable 'input_folder' is used to take in the location of the input folder. However in the Terminal, the underscores are replaced with hyphens. Just a note to remember
