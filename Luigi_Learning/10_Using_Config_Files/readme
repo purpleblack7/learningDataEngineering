@@ -7,3 +7,5 @@ This is what the command condenses to:  python
 
 If I moved the config file to /tmp and renamed it as luigi_staging.cfg, the command to enter in the terminal would be:
   LUIGI_CONFIG_PATH=/tmp/luigi_staging.cfg python -m luigi --module using-config-files DownloadSalesData --local-scheduler 
+
+The config file luigi_staging is the same as luigi.cfg
