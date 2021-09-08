@@ -1,0 +1,9 @@
+This code adds a DictParameter to specify the input and the output file:
+
+Beware that while entering the keys in a Dict, you should use double quotes " ".
+
+Check the luigi_staging.cfg file.
+
+The command in the terminal is :
+
+  LUIGI_CONFIG_PATH=/tmp/luigi_staging.cfg python -m luigi --module dict-parameter DownloadSalesData --local-scheduler
