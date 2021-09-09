@@ -1,0 +1,668 @@
+DEBUG: Checking if DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"}) is complete
+INFO: Informed scheduler that task   DownloadSalesData___input____dev_i_3e72db4eb0   has status   PENDING
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 1
+INFO: [pid 63551] Worker Worker(salt=884213841, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=63551) running   DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"})
+INFO: [pid 63551] Worker Worker(salt=884213841, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=63551) new requirements      DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"})
+DEBUG: 1 running tasks, waiting for next task to finish
+DEBUG: Checking if DownloadFile(input_folder=dev-input, file_name=sales_1.csv, index=1) is complete
+INFO: Informed scheduler that task   DownloadFile_sales_1_csv_1_dev_input_768245b1cc   has status   PENDING
+INFO: Informed scheduler that task   DownloadSalesData___input____dev_i_3e72db4eb0   has status   PENDING
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 2
+INFO: [pid 63551] Worker Worker(salt=884213841, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=63551) running   DownloadFile(input_folder=dev-input, file_name=sales_1.csv, index=1)
+INFO: [pid 63551] Worker Worker(salt=884213841, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=63551) done      DownloadFile(input_folder=dev-input, file_name=sales_1.csv, index=1)
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   DownloadFile_sales_1_csv_1_dev_input_768245b1cc   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 1
+INFO: [pid 63551] Worker Worker(salt=884213841, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=63551) running   DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"})
+INFO: [pid 63551] Worker Worker(salt=884213841, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=63551) new requirements      DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"})
+DEBUG: 1 running tasks, waiting for next task to finish
+DEBUG: Checking if DownloadFile(input_folder=dev-input, file_name=sales_2.csv, index=2) is complete
+INFO: Informed scheduler that task   DownloadFile_sales_2_csv_2_dev_input_318e17576d   has status   PENDING
+INFO: Informed scheduler that task   DownloadSalesData___input____dev_i_3e72db4eb0   has status   PENDING
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 2
+INFO: [pid 63551] Worker Worker(salt=884213841, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=63551) running   DownloadFile(input_folder=dev-input, file_name=sales_2.csv, index=2)
+INFO: [pid 63551] Worker Worker(salt=884213841, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=63551) done      DownloadFile(input_folder=dev-input, file_name=sales_2.csv, index=2)
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   DownloadFile_sales_2_csv_2_dev_input_318e17576d   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 1
+INFO: [pid 63551] Worker Worker(salt=884213841, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=63551) running   DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"})
+INFO: [pid 63551] Worker Worker(salt=884213841, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=63551) new requirements      DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"})
+DEBUG: 1 running tasks, waiting for next task to finish
+DEBUG: Checking if DownloadFile(input_folder=dev-input, file_name=sales_3.csv, index=3) is complete
+INFO: Informed scheduler that task   DownloadFile_sales_3_csv_3_dev_input_b5289f64ce   has status   PENDING
+INFO: Informed scheduler that task   DownloadSalesData___input____dev_i_3e72db4eb0   has status   PENDING
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 2
+INFO: [pid 63551] Worker Worker(salt=884213841, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=63551) running   DownloadFile(input_folder=dev-input, file_name=sales_3.csv, index=3)
+INFO: [pid 63551] Worker Worker(salt=884213841, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=63551) done      DownloadFile(input_folder=dev-input, file_name=sales_3.csv, index=3)
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   DownloadFile_sales_3_csv_3_dev_input_b5289f64ce   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Pending tasks: 1
+INFO: [pid 63551] Worker Worker(salt=884213841, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=63551) running   DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"})
+INFO: [pid 63551] Worker Worker(salt=884213841, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=63551) done      DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"})
+DEBUG: 1 running tasks, waiting for next task to finish
+INFO: Informed scheduler that task   DownloadSalesData___input____dev_i_3e72db4eb0   has status   DONE
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=884213841, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=63551) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 4 tasks of which:
+* 4 ran successfully:
+    - 3 DownloadFile(input_folder=dev-input, file_name=sales_1.csv, index=1) ...
+    - 1 DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"})
+
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+DEBUG: Checking if DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"}) is complete
+INFO: Informed scheduler that task   DownloadSalesData___input____dev_i_3e72db4eb0   has status   DONE
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=338724251, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=66548) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 complete ones were encountered:
+    - 1 DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"})
+
+Did not run any tasks
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+DEBUG: Checking if DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"}) is complete
+INFO: Informed scheduler that task   DownloadSalesData___input____dev_i_3e72db4eb0   has status   DONE
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=984342094, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=69551) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 complete ones were encountered:
+    - 1 DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"})
+
+Did not run any tasks
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+DEBUG: Checking if DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"}) is complete
+INFO: Informed scheduler that task   DownloadSalesData___input____dev_i_3e72db4eb0   has status   DONE
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=744447636, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=72587) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 complete ones were encountered:
+    - 1 DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"})
+
+Did not run any tasks
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+DEBUG: Checking if DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"}) is complete
+INFO: Informed scheduler that task   DownloadSalesData___input____dev_i_3e72db4eb0   has status   DONE
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=461729898, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=75604) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 complete ones were encountered:
+    - 1 DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"})
+
+Did not run any tasks
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+DEBUG: Checking if DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"}) is complete
+INFO: Informed scheduler that task   DownloadSalesData___input____dev_i_3e72db4eb0   has status   DONE
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=248167139, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=78612) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 complete ones were encountered:
+    - 1 DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"})
+
+Did not run any tasks
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+DEBUG: Checking if DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"}) is complete
+INFO: Informed scheduler that task   DownloadSalesData___input____dev_i_3e72db4eb0   has status   DONE
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=141844402, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=81631) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 complete ones were encountered:
+    - 1 DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"})
+
+Did not run any tasks
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+DEBUG: Checking if DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"}) is complete
+INFO: Informed scheduler that task   DownloadSalesData___input____dev_i_3e72db4eb0   has status   DONE
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=235277466, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=84593) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 complete ones were encountered:
+    - 1 DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"})
+
+Did not run any tasks
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+DEBUG: Checking if DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"}) is complete
+INFO: Informed scheduler that task   DownloadSalesData___input____dev_i_3e72db4eb0   has status   DONE
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=470233634, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=87568) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 complete ones were encountered:
+    - 1 DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"})
+
+Did not run any tasks
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+DEBUG: Checking if DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"}) is complete
+INFO: Informed scheduler that task   DownloadSalesData___input____dev_i_3e72db4eb0   has status   DONE
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=254080272, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=90560) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 complete ones were encountered:
+    - 1 DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"})
+
+Did not run any tasks
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+DEBUG: Checking if DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"}) is complete
+INFO: Informed scheduler that task   DownloadSalesData___input____dev_i_3e72db4eb0   has status   DONE
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=222604303, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=93547) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 complete ones were encountered:
+    - 1 DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"})
+
+Did not run any tasks
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+DEBUG: Checking if DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"}) is complete
+INFO: Informed scheduler that task   DownloadSalesData___input____dev_i_3e72db4eb0   has status   DONE
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=429441299, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=96593) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 complete ones were encountered:
+    - 1 DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"})
+
+Did not run any tasks
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+DEBUG: Checking if DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"}) is complete
+INFO: Informed scheduler that task   DownloadSalesData___input____dev_i_3e72db4eb0   has status   DONE
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=267116055, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=99830) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 complete ones were encountered:
+    - 1 DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"})
+
+Did not run any tasks
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+DEBUG: Checking if DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"}) is complete
+INFO: Informed scheduler that task   DownloadSalesData___input____dev_i_3e72db4eb0   has status   DONE
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=541125076, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=3500) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 complete ones were encountered:
+    - 1 DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"})
+
+Did not run any tasks
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+DEBUG: Checking if DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"}) is complete
+INFO: Informed scheduler that task   DownloadSalesData___input____dev_i_3e72db4eb0   has status   DONE
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=684608438, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=6557) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 complete ones were encountered:
+    - 1 DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"})
+
+Did not run any tasks
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+DEBUG: Checking if DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"}) is complete
+INFO: Informed scheduler that task   DownloadSalesData___input____dev_i_3e72db4eb0   has status   DONE
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=943877694, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=9843) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 complete ones were encountered:
+    - 1 DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"})
+
+Did not run any tasks
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+DEBUG: Checking if DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"}) is complete
+INFO: Informed scheduler that task   DownloadSalesData___input____dev_i_3e72db4eb0   has status   DONE
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=442915319, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=13038) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 complete ones were encountered:
+    - 1 DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"})
+
+Did not run any tasks
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+DEBUG: Checking if DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"}) is complete
+INFO: Informed scheduler that task   DownloadSalesData___input____dev_i_3e72db4eb0   has status   DONE
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=433413658, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=16263) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 complete ones were encountered:
+    - 1 DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"})
+
+Did not run any tasks
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+DEBUG: Checking if DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"}) is complete
+INFO: Informed scheduler that task   DownloadSalesData___input____dev_i_3e72db4eb0   has status   DONE
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=618813966, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=19221) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 complete ones were encountered:
+    - 1 DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"})
+
+Did not run any tasks
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+DEBUG: Checking if DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"}) is complete
+INFO: Informed scheduler that task   DownloadSalesData___input____dev_i_3e72db4eb0   has status   DONE
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=268096757, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=22330) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 complete ones were encountered:
+    - 1 DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"})
+
+Did not run any tasks
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+DEBUG: Checking if DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"}) is complete
+INFO: Informed scheduler that task   DownloadSalesData___input____dev_i_3e72db4eb0   has status   DONE
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=432797454, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=25447) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 complete ones were encountered:
+    - 1 DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"})
+
+Did not run any tasks
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+DEBUG: Checking if DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"}) is complete
+INFO: Informed scheduler that task   DownloadSalesData___input____dev_i_3e72db4eb0   has status   DONE
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=874659925, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=28428) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 complete ones were encountered:
+    - 1 DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"})
+
+Did not run any tasks
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+DEBUG: Checking if DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"}) is complete
+INFO: Informed scheduler that task   DownloadSalesData___input____dev_i_3e72db4eb0   has status   DONE
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=953330726, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=31525) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 complete ones were encountered:
+    - 1 DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"})
+
+Did not run any tasks
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+DEBUG: Checking if DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"}) is complete
+INFO: Informed scheduler that task   DownloadSalesData___input____dev_i_3e72db4eb0   has status   DONE
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=283561053, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=34576) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 complete ones were encountered:
+    - 1 DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"})
+
+Did not run any tasks
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+DEBUG: Checking if DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"}) is complete
+INFO: Informed scheduler that task   DownloadSalesData___input____dev_i_3e72db4eb0   has status   DONE
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=289903599, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=37801) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 complete ones were encountered:
+    - 1 DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"})
+
+Did not run any tasks
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+DEBUG: Checking if DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"}) is complete
+INFO: Informed scheduler that task   DownloadSalesData___input____dev_i_3e72db4eb0   has status   DONE
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=641248030, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=40790) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 complete ones were encountered:
+    - 1 DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"})
+
+Did not run any tasks
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+DEBUG: Checking if DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"}) is complete
+INFO: Informed scheduler that task   DownloadSalesData___input____dev_i_3e72db4eb0   has status   DONE
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=568044943, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=43755) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 complete ones were encountered:
+    - 1 DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"})
+
+Did not run any tasks
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+DEBUG: Checking if DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"}) is complete
+INFO: Informed scheduler that task   DownloadSalesData___input____dev_i_3e72db4eb0   has status   DONE
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=752913028, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=46904) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 complete ones were encountered:
+    - 1 DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"})
+
+Did not run any tasks
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+DEBUG: Checking if DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"}) is complete
+INFO: Informed scheduler that task   DownloadSalesData___input____dev_i_3e72db4eb0   has status   DONE
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=616743023, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=50053) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 complete ones were encountered:
+    - 1 DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"})
+
+Did not run any tasks
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+DEBUG: Checking if DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"}) is complete
+INFO: Informed scheduler that task   DownloadSalesData___input____dev_i_3e72db4eb0   has status   DONE
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=314374136, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=52943) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 complete ones were encountered:
+    - 1 DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"})
+
+Did not run any tasks
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
+DEBUG: Checking if DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"}) is complete
+INFO: Informed scheduler that task   DownloadSalesData___input____dev_i_3e72db4eb0   has status   DONE
+INFO: Done scheduling tasks
+INFO: Running Worker with 1 processes
+DEBUG: Asking scheduler for work...
+DEBUG: Done
+DEBUG: There are no more tasks to run at this time
+INFO: Worker Worker(salt=172010007, workers=1, host=Stevan-Thomas-Werkzeug.local, username=purpleblack, pid=55921) was stopped. Shutting down Keep-Alive thread
+INFO: 
+===== Luigi Execution Summary =====
+
+Scheduled 1 tasks of which:
+* 1 complete ones were encountered:
+    - 1 DownloadSalesData(params={"input": "dev-input", "output": "allsales_dev.csv"})
+
+Did not run any tasks
+This progress looks :) because there were no failed tasks or missing dependencies
+
+===== Luigi Execution Summary =====
+
