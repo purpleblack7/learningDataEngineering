@@ -1,0 +1,5 @@
+This code is schedule pipelines using cron.The cron formula used is (accessed by the command crontab -e):
+* * * * * /Users/purpleblack/sources/scheduling-pipeline/run_pipeline_dev.sh (every minute)
+
+
+Delete the code after you're done by erasing them in crontab -e                                                                           
