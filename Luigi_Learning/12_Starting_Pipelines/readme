@@ -1,0 +1,1 @@
+This code creates a pipeline across development (dev) and production cases. There are separate config files for both scenarios and different output files are created.
